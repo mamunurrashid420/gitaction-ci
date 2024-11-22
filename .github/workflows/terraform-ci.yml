@@ -1,0 +1,17 @@
+name: learn-tf-ci
+run-name: ${{github.actor}} is learning github actions
+on: [push]
+# push:
+
+#   branches:
+#     - main
+#   pull_request:
+jobs:
+  install-makefile:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |-
+          sudo apt-get update
+          sudo apt-get install make
+          make --version
