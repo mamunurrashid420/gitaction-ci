@@ -17,4 +17,4 @@ jobs:
           sudo apt-get install make -y
       - shell: bash
         run: |
-          make docker_build:
+          make docker_build
