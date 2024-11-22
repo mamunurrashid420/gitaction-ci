@@ -14,7 +14,7 @@ jobs:
       - shell: bash
         run: |
           sudo apt-get update -y
-          sudo apt-get install make
+          sudo apt-get install make -y
       - shell: bash
-        run: |-
+        run: |
           make docker_build:
